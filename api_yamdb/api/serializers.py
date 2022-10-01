@@ -37,7 +37,7 @@ class RegistrationSerializer(serializers.ModelSerializer):
                     f"В названии почты - {data['email']} - содержатся "
                     f"недопустимые выражения"
                 )
-            return data
+        return data
 
     class Meta:
         model = CustomUser
