@@ -61,6 +61,7 @@ jobs:
             sudo docker-compose stop
             sudo docker-compose rm web
             sudo docker pull dmitriykir/yamdb_final:latest
+            sudo rm .env
             touch .env
             echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
             echo DB_NAME=${{ secrets.DB_NAME }} >> .env
